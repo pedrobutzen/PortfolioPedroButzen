@@ -6,4 +6,4 @@ Disponível em:
 http://pedrobutzen.com/
 
 ## **** ATENÇÃO **** 
-Dados do site não são reais.
+Dados e projetos do site não são reais.
