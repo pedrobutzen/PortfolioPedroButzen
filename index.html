@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR" ng-app="portfolioApp">
+    <head>
+        <title>Pedro Butzen</title>
+        <meta charset="UTF-8">
+        <!--meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"-->
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link type="text/css" rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+        <link type="text/css" rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.min.css"/>
+        <link type="text/css" rel="stylesheet" href="lib/materialPreloader/materialPreloader.min.css"/>
+        <link type="text/css" rel="stylesheet" href="lib/fontello/css/fontello.min.css"/>
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <div id="loading" class="bg-blue"><div><ul><li></li><li></li><li></li></ul></div></div>
+        <div id="alert"><div id="alert_msg"></div></div>
+        <div class="container-fluid heigth-auto">
+            <div class="row">
+                <div class="col-lg-4  heigth-auto bg-blue" id="intro">
+                    <a href="#"><img src="img/logo2.2.png" id="logo"/></a>
+                    <img src="img/triangle2.png" id="triangle"/>
+                    <div id="mini-description">
+                        <h1>Front & Back-End</h1>
+                        <p>Designer programador antenado em tecnologias inovadoras da atualidade, trazendo não somente soluções inteligentes, mas grandes experiências de uso.</p>
+                    </div>
+                </div>
+                <!--div class="col-lg-8 col-lg-offset-4 container-view"-->
+                <div class="col-lg-8 container-view">
+                    <div class="container-navbar">
+                        <nav id="navbar">
+                            <ul class="nav">
+                                <li id="link-sobre"><a href="#sobre">Sobre</a></li>
+                                <li id="link-portfolio"><a href="#portfolio">Portfolio</a></li>
+                                <li id="link-contato"><a href="#contato">Contato</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="view heigth-auto-view"><ng-view></ng-view></div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="lib/angular/angular.min.js"></script>
+        <script type="text/javascript" src="lib/angular/angular-sanitize.min.js"></script>
+        <script type="text/javascript" src="lib/angular/angular-route.min.js"></script>
+        <script type="text/javascript" src="lib/angular/angular-resource.js"></script>
+        <script type="text/javascript" src="lib/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="lib/materialPreloader/materialPreloader.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/routes.js"></script>
+        <script type="text/javascript" src="js/controllers/SobreController.js"></script>
+        <script type="text/javascript" src="js/controllers/PortfolioController.js"></script>
+        <script type="text/javascript" src="js/controllers/PortfolioListController.js"></script>
+        <script type="text/javascript" src="js/controllers/ContatoController.js"></script>
+        <script type="text/javascript" src="js/directives/portfolio/portfolioItem.js"></script>
+    </body>
+</html>

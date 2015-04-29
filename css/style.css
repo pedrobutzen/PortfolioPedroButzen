@@ -1,0 +1,111 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {font-family: 'Open Sans', sans-serif; font-size: 18px; font-weight: 300; text-align: left; line-height: 1.6;}
+a, a:hover, a:active, a:focus, a:visited{text-decoration: none; color: #333;}
+
+#loading{position: absolute; width: 100%; height: 100%; z-index: 9999; display: none;}
+#loading ul{position: fixed; z-index: 3; margin: 0 auto; left: 0; right: 0; top: 50%;  margin-top: -30px; width: 60px; height: 60px; list-style: none;}
+#loading li{background-color: #FFFFFF; width: 10px; height: 10px; float: right; margin-right: 5px; box-shadow: 0px 100px 20px rgba(0,0,0,0.2);}
+#loading li:first-child{-webkit-animation: loadbars 0.6s cubic-bezier(0.645,0.045,0.355,1) infinite 0s;}
+#loading li:nth-child(2){-webkit-animation: loadbars 0.6s ease-in-out infinite -0.2s;}
+#loading li:nth-child(3){-webkit-animation: loadbars 0.6s ease-in-out infinite -0.4s;}
+
+#alert{position: absolute; top: 0px; right: 0px; height: auto; width: 300px; margin: 50px 30px 0px 0px; background-color: #FFC107; z-index: 9999; display: none;}
+#alert div{padding: 25px;}
+
+.bg-blue{background-color: #455A64}
+#intro{color: #FFFFFF; padding: 0; top: 0; left: 0; box-shadow: 0px 0 20px #717171;}
+
+#logo{width: 300px; margin: 30px 0 0 45px;}
+
+#mini-description{padding: 50px; position: absolute; bottom: 90px; text-align: right;}
+#mini-description h1{font-size: 65px;}
+#mini-description p{font-size: 20px;}
+
+#triangle{position: absolute; bottom: 0px; left: 0px;}
+
+.container-view{padding: 0px; position: relative;}
+.view{padding: 0px; overflow: auto; height: 500px;}
+
+.container-navbar{top: 0px; width: 100%; margin-left: 0px;}
+#navbar{top: 0px; font-family: 'Montserrat', sans-serif; background-color: #607D8B; height: 56px; width: 100%;}
+#navbar ul{width: 250px; margin: 0 auto;}
+#navbar li{float: left;}
+#navbar li a, #navbar li a:visited, #intro #navbar li a:focus{text-decoration: none; background: none; color: #FFFFFF; padding: 16px; text-align: center; font-size: 13px;}
+#navbar li a:hover, #navbar li a:active, #navbar .active a{transition: all 0.5s ease; background: none; border-bottom: 4px solid #FFC107; -webkit-animation: updown 1.5s ease-out; animation: updown 1.5s ease-out;}
+#navbar .active a{transition: all 0.5s ease; border-bottom: 4px solid #FFC107;}
+
+.view{padding: 70px 30px 30px 60px;}
+.view h2{color: #6B6B6B; font-weight: 600; font-family: 'Montserrat', sans-serif; margin-bottom: 30px;}
+.view h3{color: #727272; font-size: 20px; margin-bottom: 60px;}
+
+#portfolio .portfolio-item{margin: 0 auto; padding: 0 25px 25px 0;}
+#portfolio .portfolio-item img{transition: all 0.7s ease;}
+#portfolio .portfolio-item img:hover{-webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%);}
+#portfolio .container-item, #portfolio .col-md-12{margin: 0 auto; padding: 0px;}
+
+#portfolio .portfolio-caption{background-color: #FFC107; padding: 20px 5px 20px 5px; text-align: center; line-height: 0.5; cursor: default;}
+#portfolio .portfolio-caption h4{font-weight: 600; font-size: 18px;}
+#portfolio .portfolio-caption p{font-size: 14px; font-style: italic;}
+
+#portfolio-datalhes h3{font-size: 24px; margin-bottom: 30px;}
+#portfolio-datalhes ul{list-style: none; margin-bottom: 30px; padding-left: 25px;}
+#portfolio-datalhes ul li:before {content: "\2023 \0020";}
+#portfolio-datalhes img{padding: 20px; margin:  0 auto;}
+
+#contato .form-control{border-radius: 0; border: 0; border-bottom: 1px solid #eee; height: auto; padding: 20px 0 20px 0; font-size: inherit; box-shadow: none; line-height: 22px; margin: 0; box-shadow: none;}
+#contato .form-control:first-child{border-top: 1px solid #eee;}
+#contato input[type="email"], #contato input[type="tel"]{width: 50%; float: left;}
+#contato textarea{resize: none; border-bottom: 0px !important;}
+#contato form .btn.btn-primary{padding: 20px 40px; background: #424242; color: #fff; font-weight: 600; font-size: 18px; border: 0; border-radius: 0px; width: 100%; margin-top: 20px;}
+#contato .ng-invalid{color: #FF0000;}
+
+#contato .social{margin-bottom: 30px;}
+#contato .social .icon{padding: 10px; color: #727272;}
+
+@media (min-width: 1400px) {
+    #mini-description{padding: 70px}
+}
+@media (max-width: 1199px) {
+    #intro{position: relative;}
+    #mini-description{padding: 130px; bottom: 50px;}
+    #portfolio-datalhes img{padding: 10px; margin:  0 auto;}
+}
+@media (max-width: 800px) {
+    #intro{position: relative;}
+    #mini-description{padding: 90px; bottom: 60px;}
+    #mini-description h1{font-size: 50px;}
+    #mini-description p{font-size: 18px;}
+}
+@media (max-width: 1199px) {
+    #intro {position: relative;}
+}
+@media (max-width: 475px) {
+    #mini-description{padding: 40px; bottom: 25px;}
+    #mini-description h1{font-size: 45px;}
+    #mini-description p{font-size: 16px;}
+    #logo{width: 250px;}
+    #triangle{display: none;}
+}
+
+@-webkit-keyframes updown {
+    50% {transform: translate(0, 10px);}
+}
+@keyframes updown {
+    50% {transform: translate(0, 10px);}
+}
+@-webkit-keyframes 'loadbars' {
+    0%{
+        height: 10px;
+        margin-top: 25px;
+    }
+    50%{
+        height:50px;
+        margin-top: 0px;
+    }
+    100%{
+        height: 10px;
+        margin-top: 25px;
+    }
+}

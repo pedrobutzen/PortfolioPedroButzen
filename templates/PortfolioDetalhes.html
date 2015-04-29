@@ -1,0 +1,11 @@
+<div id="portfolio-datalhes">
+    <h2>{{item.titulo}}</h2>
+    <h3 class="text-muted">{{item.categoria}}</h3>
+    Tecnologias utilizadas:
+    <ul><li ng-repeat="tecnologia in item.tecnologias">{{tecnologia}}</li></ul>
+    <p>{{item.descricao}}</p>
+    <div ng-repeat="img in item.img">
+        <img ng-src="{{img}}" class="img-polaroid img-responsive"/>
+    </div>
+
+</div>

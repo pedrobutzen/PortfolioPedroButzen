@@ -1,0 +1,13 @@
+<div id="portfolio">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-mb-12">
+                <h2>Portfolio</h2>
+                <h3 ng-bind-html="portfolio.descricao"></h3>
+            </div>
+        </div>
+        <div class="row">
+            <portfolio-item ng-repeat="item in portfolio.itens"/>
+        </div>
+    </div>
+</div>

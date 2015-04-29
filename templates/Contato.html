@@ -1,0 +1,16 @@
+<div id="contato">
+    <h2>Contato</h2>
+    <div class="social">
+        <div><span class="icon icon-phone-1"></span>{{contato.telefone}}</div>
+        <div><span class="icon icon-mail-alt"></span> <a href="mailto:{{contato.email}}">{{contato.email}}</a></div>
+        <div><span class="icon icon-linkedin-squared"></span> <a href="https://{{contato.linkedin}}" target="_blank">{{contato.linkedin}}</a></div>
+        <div><span class="icon icon-skype"></span> <a href="skype:{{contato.skype}}?call">{{contato.skype}}</a></div>
+    </div>
+    <form name="formContato">
+        <input type="text" class="form-control" ng-model="inputContato.nome" placeholder="Nome*" required/>
+        <input type="email" class="form-control" ng-model="inputContato.email" placeholder="Email*" required/>
+        <input type="tel" class="form-control" ng-model="inputContato.telefone" placeholder="Telefone"/>
+        <textarea class="form-control" ng-model="inputContato.mensagem" placeholder="Mensagem*" required rows="6"></textarea>
+        <button type="submit" class="btn btn-primary" ng-click="sendInput(formContato)" value="Enviar">Enviar</button>
+    </form>
+</div>
